@@ -271,7 +271,7 @@ header {
   margin: 0 auto;
 }
 .sns_itembox {
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .sns_itembox i {
   font-size: 50px;
@@ -289,7 +289,7 @@ footer {
   line-height: 60px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 767px) {
 html {
     overflow-x: hidden;
 }
@@ -304,5 +304,122 @@ body {
 .sp {
   display: block;
 }
+
+.pc-br {
+  display: none;
+}
+
+.wrap{
+  width: 90%;
+  margin:0 auto;
+}
+
+/*** sp common ***/
+.section {
+  padding: 90px 5% !important;
+}
+
+/*** sp header ****/
+header {
+  height: 50px;
+}
+.header_logo img {
+  height: 50px;
+}
+.menu-box {
+    float: right;
+    width: 40px;
+    height: 40px;
+    margin-right: 5%;
+    border: 1px solid #FAFAFA;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.list-bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+    background-color: #FAFAFA;
+}
+.list-bar:first-child {
+    margin-top: 10px;
+}
+
+/*** sp top_main ***/
+#top_main {
+  background-image: url(img/code.png);
+}
+.top_main_title {
+  font-size: 40px;
+}
+.top_main_text {
+  font-size: 18px;
+}
+
+/*** sp portfolio ***/
+#portfolio {
+  background-color: #ECEFF1;
+}
+.portfolio_wrap {
+  width: 90%;
+}
+.portfolio_img_item {
+  margin: 0 auto 10px;
+  float: none;
+}
+.portfolio_img_item:nth-child(2n+1) {
+  display: none;
+}
+.portfolio_img_item:nth-child(3n) {
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
+/*** sp feature ***/
+.feature_wrap {
+  width: 90%;
+}
+.feature_itembox {
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+.feature_itembox:last-child {
+  margin-bottom: 0;
+}
+
+/*** sp profile ***/
+.profile_left, .profile_right {
+  width: 100%;
+}
+.profile_left {
+  margin-bottom: 20px;
+}
+.profile_right {
+  text-align: center;
+}
+
+
+/*** sp contact ***/
+.contact_wrap {
+  width: 90%;
+}
+.contact_left, .contact_right {
+  width: 100%;
+}
+.contact_detail{
+  margin-bottom: 20px;
+}
+.contact_mial_tel {
+  text-align: center;
+}
+.contact_sns {
+  text-align: center;
+  width: 164px;
+}
+
+
 
 }
